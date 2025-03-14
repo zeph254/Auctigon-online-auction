@@ -6,12 +6,11 @@ import Contact from './pages/Contact'
 import Auction from './pages/Auction'
 import Login from './pages/Login'
 import MyBids from './pages/MyBids'
-import AuctionDetail from './pages/AuctionDetail'
-import AuctionListing from './pages/AuctionListing'
 import Register from './pages/Register'
 import Nopage from './pages/Nopage'
 import Terms from './pages/Terms'
 import Profile from './pages/Profile'
+import SellerDashboard from './pages/SellerDashboard'
 import AdminDashboard from './pages/AdminDashboard'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
@@ -31,10 +30,9 @@ function App() {
           <Route path="my-bids" element={<MyBids/>} />
           <Route path="login" element={<Login/>} /> 
           <Route path="profile" element={<Profile/>} />
-          <Route path="auction/:id" element={<AuctionDetail/>} />
-          <Route path="auctions" element={<AuctionListing/>} />
           <Route path="register" element={<Register/>} />
           <Route path="*" element={<Nopage/>} />
+          <Route path="seller" element={<SellerDashboard/>} />
           <Route path="admin" element={<AdminDashboard/>} />
         </Route>
       </Routes>

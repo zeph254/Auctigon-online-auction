@@ -197,6 +197,20 @@ export default function CustomNavbar() {
             >
               Profile
             </Link>
+            <Link
+              to="/seller"
+              className="block text-green-300 hover:text-green-200 mb-4 transition duration-300"
+              onClick={() => setShow(false)}
+            >
+              Seller Dashboard
+            </Link>
+            <Link
+              to="/admin"
+              className="block text-green-300 hover:text-green-200 mb-4 transition duration-300"
+              onClick={() => setShow(false)}
+            >
+              Admin Dashboard
+            </Link>
             <div className="mt-6">
               <Link
                 to="/login"
